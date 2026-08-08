@@ -1,7 +1,7 @@
 class Solution {
     public String removeStars(String s) {
-        Stack<Character> Stack = new Stack<>();
-        for( char ch :s.toCharArray()){
+        Stack<Character>Stack = new Stack<>();
+        for(char ch : s.toCharArray()){
             if(ch =='*'){
                 Stack.pop();
             }
@@ -10,7 +10,7 @@ class Solution {
             }
         }
         StringBuilder result = new StringBuilder();
-        for(char ch: Stack){
+        for(char ch : Stack){
             result.append(ch);
         }
         return result.toString();
