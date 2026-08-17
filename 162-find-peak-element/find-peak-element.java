@@ -1,7 +1,5 @@
 class Solution {
     public int findPeakElement(int[] nums) {
-        int curr = 0;
-        int peak = 0;
         int n = nums.length;
 
         if(n == 1)
