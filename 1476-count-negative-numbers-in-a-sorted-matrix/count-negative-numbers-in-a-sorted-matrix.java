@@ -5,14 +5,14 @@ class Solution {
         int count = 0;
         
         for (int i=0;i<n;i++){
-            int low = firstNegativeIndex(grid[i],0,m-1);
+            int low = bs(grid[i],0,m-1);
             count += (m - low);
         }
         
         return count;
     }
     
-    private int firstNegativeIndex(int[] row, int low, int high) {
+    private int bs(int[] row, int low, int high) {
         while (low<=high) {
             int mid = low+(high-low)/2;
             if (row[mid]>=0) {
