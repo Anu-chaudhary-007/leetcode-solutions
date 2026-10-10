@@ -21,7 +21,11 @@ class Solution {
 
             open = Math.max(open, 0);
         }
-
-        return open == 0;
+        if(open == 0){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
