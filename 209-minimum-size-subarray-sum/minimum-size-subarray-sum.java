@@ -8,7 +8,7 @@ class Solution {
             sum += nums[right];
 
             while (sum >= target) {
-                minLen = Math.min(minLen, right - left + 1);
+                minLen = Math.min(minLen, right-left+1);
                 sum -= nums[left];
                 left++;
             }
